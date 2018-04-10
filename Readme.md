@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Руслан Писарев](https://up.htmlacademy.ru/adaptive/14/user/646031).
-* Наставник: [Филипп Шамсиев](https://up.htmlacademy.ru/htmlcss/20/user/70260).
+* Наставник: [Филипп Шамсиев](https://up.htmlacademy.ru/adaptive/14/user/70260).
 
 ---
 
