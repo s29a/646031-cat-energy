@@ -14,7 +14,7 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-              <a href="index.html">Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a href="catalog.html">Каталог продукции</a>
@@ -29,17 +29,17 @@
       <section class="selection">
         <h1 class="selection__title">Подбор программы</h1>
         <p class="selection__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        <form class="selection__form" method="get" action="https://echo.htmlacademy.ru">
+        <form class="selection__form" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="selection__fieldset">
-            <div class="selection_block">
+            <div class="selection__block">
               <label class="selection__label" for="name">Имя:*</label>
               <input class="selection__text-field" type="text" id="name" name="name" placeholder="Барсик">
             </div>
-            <div class="selection_block">
+            <div class="selection__block">
               <label class="selection__label" for="weight">Вес (кг):*</label>
               <input class="selection__text-field" type="text" id="weight" name="weight" placeholder="7">
             </div>
-            <div class="selection_block">
+            <div class="selection__block">
               <label class="selection__label" for="age">Возраст (лет):</label>
               <input class="selection__text-field" type="text" id="age" name="age" placeholder="7">
             </div>
@@ -62,13 +62,13 @@
           </fieldset>
           <fieldset class="selection__fieldset owner-contacts">
             <legend>Контактные данные (владельца кота)</legend>
-            <div class="owner-contacts_block">
-              <label class="owner-contacts__label" for="email">E-mail:*</label>
-              <input class="owner-contacts__text-field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
+            <div class="selection__block">
+              <label class="selection__label" for="email">E-mail:*</label>
+              <input class="selection__text-field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
             </div>
-            <div class="owner-contacts_block">
-              <label class="owner-contacts__label" for="phone">Телефон:*</label>
-              <input class="owner-contacts__text-field" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+            <div class="selection__block">
+              <label class="selection__label" for="phone">Телефон:*</label>
+              <input class="selection__text-field" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
             </div>
           </fieldset>
           <fieldset class="selection__fieldset">
@@ -103,8 +103,7 @@
       <section class="contacts">
         <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <div class="contacts__map-wraper">
-        </div>
+        <div class="contacts__map-wraper"></div>
       </section>
     </main>
     <footer class="page-footer">
