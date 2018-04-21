@@ -1,0 +1,39 @@
+.first-screen {
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.first-screen__wrapper {
+	padding-top: 25px;
+	background-color: $img-color;
+	background-image: url("../img/index-background-mobile@1x.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100% 305px;
+}
+
+.first-screen__title {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 25px;
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 400;
+}
+
+.first-screen__slogan {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+	line-height: 14px;
+}
+
+.first-screen__image {
+	margin-bottom: -135px;
+}
+
+.first-screen__button {
+	margin-top: 135px;
+}
