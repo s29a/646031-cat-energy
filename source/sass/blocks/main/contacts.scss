@@ -1,0 +1,33 @@
+.contacts__wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 0;
+}
+
+.contacts__title {
+	padding: 0;
+	margin: 0;
+	width: 45%;
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: $textcolor-dark;
+	font-weight: 400;
+}
+
+.contacts__adress-wrapper {
+	width: 50%;
+	font-family: "Arial",sans-serif;
+	line-height: 20px;
+}
+
+.contacts__adress {
+	margin: 0;
+	padding: 0;
+}
+
+.contacts__city {
+	margin: 0;
+	padding: 0;
+}
+

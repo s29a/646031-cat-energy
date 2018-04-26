@@ -81,13 +81,21 @@
 
 	&::after {
 		content: "";
-		display: inline-block;
 		width: 24px;
 		height: 11px;
+		margin-left: 25px;
+		display: inline-block;
 		background-image: url("../img/icon-right-arrow-long.svg");
 		background-repeat: no-repeat;
-		margin-left: 25px;
 	}
-	
 
+	&:hover::after,
+	&:focus::after {
+		width: 33px;
+		background-image: url("../img/icon-right-arrow-verylong.svg");
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
 }
