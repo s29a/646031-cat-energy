@@ -1,0 +1,29 @@
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+
+  list-style: none;
+
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+}
+
+.social__icon {
+  fill: $footer-color;
+}
+
+.social__link {
+  display: block;
+  width: 58px;
+
+  text-align: center;
+
+  &:hover > .social__icon,
+  &:focus > .social__icon {
+    fill: $button-bg;
+  }
+}
