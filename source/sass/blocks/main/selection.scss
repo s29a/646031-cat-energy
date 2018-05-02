@@ -16,11 +16,12 @@
 
 
 .selection__text {
-	margin: 0;
-	padding: 0 20px;
-	margin-bottom: 35px;
-	text-transform: uppercase;
-	color: $textcolor-dark;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0 20px;
+
+  color: $textcolor-dark;
+  text-transform: uppercase;
 }
 
 .selection__fieldset {
