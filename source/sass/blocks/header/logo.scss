@@ -1,17 +1,18 @@
 .logo {
-	padding: 11px 20px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 20px;
 }
 
 .logo__toggle {
-	padding: 0;
-	width: 24px;
-	height: 18px;
-	border: none;
-	background-color: #ffffff;
-	background-image: url("../img/icon-close.svg");
-	background-repeat: no-repeat;
-	background-position: center;
+  width: 24px;
+  height: 18px;
+  padding: 0;
+
+  background-color: #ffffff;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
 }
