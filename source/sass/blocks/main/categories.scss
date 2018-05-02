@@ -50,6 +50,7 @@
       background-image: url("../img/icon-cat-slim.svg");
     }
   }
+
   &--pro {
     &::after {
       top: 33px;
@@ -82,7 +83,7 @@
   padding: 0;
   padding-bottom: 20px;
 
-  font-family: "Arial",sans-serif;
+  font-family: "Arial", sans-serif;
 
   border-bottom: 1px solid $border-color;
 }
