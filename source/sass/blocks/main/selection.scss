@@ -69,7 +69,11 @@
 
     border: 9px solid #ffffff;
     border-radius: 50%;
-    box-shadow: 0 0 0 1px #cecece;
+    box-shadow: 0 0 0 1px #cdcdcd;
+  }
+
+  &:hover::before {
+    box-shadow: 0 0 0 1px #bababa;
   }
 }
 
@@ -87,6 +91,10 @@
     margin-right: 15px;
 
     border: 1px solid #cecece;
+  }
+
+  &:hover::before {
+    border: 1px solid #bababa;
   }
 }
 
