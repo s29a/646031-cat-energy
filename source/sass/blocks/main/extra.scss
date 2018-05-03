@@ -1,4 +1,4 @@
-.extra__wrapper {
+.extra__title-wrapper {
   display: flex;
   align-items: center;
   padding: 30px 0;
@@ -71,6 +71,7 @@
   text-align: center;
 
   background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-color: $button-bg;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -86,3 +87,16 @@
   font-family: "Arial", sans-serif;
   color: #ffffff;
 }
+
+@media (min-width: $desktop-width) {
+  .extra__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .extra__item {
+    display: flex;
+    align-items: center;
+  }
+}
+

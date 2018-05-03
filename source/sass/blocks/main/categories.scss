@@ -118,3 +118,22 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .categories__list {
+    display: flex;
+  }
+
+  .categories__item {
+    flex-basis: 50%;
+  }
+
+  .categories__item--slim {
+    margin-right: 40px;
+  }
+
+  .categories__item--pro {
+    margin-left: 40px;
+  }
+}
+
