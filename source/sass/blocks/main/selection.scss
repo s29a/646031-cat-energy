@@ -16,10 +16,10 @@
 
 
 .selection__text {
+  width: 230px;
   margin: 0;
   margin-bottom: 35px;
   padding: 0;
-  width: 230px;
 
   color: $textcolor-dark;
   text-transform: uppercase;
@@ -148,9 +148,9 @@
 }
 
 .selection__wrapper {
-  padding-left: 20px;
   display: flex;
   align-items: center;
+  padding-left: 20px;
 
   &::after {
     content: "";
