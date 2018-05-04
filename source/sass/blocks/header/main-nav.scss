@@ -1,0 +1,17 @@
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+  }
+
+  .main-nav__logo {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    padding: 50px 110px;
+  }
+}

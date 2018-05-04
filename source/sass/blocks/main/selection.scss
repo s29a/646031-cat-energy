@@ -6,7 +6,7 @@
   margin: 0;
   margin-top: 25px;
   margin-bottom: 30px;
-  padding: 0 20px;
+  padding: 0;
 
   font-weight: 400;
   font-size: 36px;
@@ -16,9 +16,10 @@
 
 
 .selection__text {
+  width: 230px;
   margin: 0;
   margin-bottom: 35px;
-  padding: 0 20px;
+  padding: 0;
 
   color: $textcolor-dark;
   text-transform: uppercase;
@@ -26,7 +27,7 @@
 
 .selection__fieldset {
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
 
   font-size: 16px;
   line-height: 18px;
@@ -36,7 +37,8 @@
   border: none;
 
   &--border {
-    padding: 15px 20px;
+    margin: 0 -20px;
+    padding: 15px 0;
 
     border-top: 1px solid $border-light;
     border-bottom: 1px solid $border-light;
@@ -148,12 +150,13 @@
 .selection__wrapper {
   display: flex;
   align-items: center;
+  padding-left: 20px;
 
   &::after {
     content: "";
 
     flex-grow: 1;
-    width: 10px;
+    width: 175px;
     height: 3px;
     margin-left: 25px;
 
@@ -162,8 +165,6 @@
 }
 
 .selection__button-wrapper {
-  padding: 0 20px;
-
   text-align: center;
 }
 
@@ -193,4 +194,40 @@
   border: 1px solid $menu-border;
 
   resize: none;
+}
+
+@media (min-width: $tablet-width) {
+  .selection__fieldset {
+    &--border {
+      border: 1px solid $border-light;
+    }
+  }
+
+  .selection__button-wrapper {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .selection__button,
+  .selection__sub {
+    flex-basis: 50%;
+  }
+
+  .selection__list--columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection__column {
+    display: flex;
+    justify-content: space-between;
+
+    .selection__block,
+    .selection__fieldset {
+      flex-basis: 50%;
+    }
+  }
 }
