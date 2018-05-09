@@ -19,7 +19,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 0;
 
   &:hover > .copyright__image,
   &:focus > .copyright__image {
@@ -28,5 +27,15 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    justify-content: flex-end;
+  }
+
+  .copyright__name {
+    margin-right: 22px;
   }
 }

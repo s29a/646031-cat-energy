@@ -1,16 +1,24 @@
 .page-footer {
   background-color: $bg;
-}
-
-.page-footer__wrapper {
   display: flex;
   flex-direction: column;
 }
 
+.page-footer__block {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 @media (min-width: $tablet-width) {
-  .page-footer__wrapper {
+  .page-footer {
+    padding-top: 59px;
+    padding-bottom: 56px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .page-footer__block {
+    width: 33.33%;
   }
 }

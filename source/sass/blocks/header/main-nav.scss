@@ -1,8 +1,19 @@
+.main-nav--no-js {
+  .main-nav__button {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px 30px;
+    padding: 25px 30px;
+    padding-right: 12px;
   }
 
   .main-nav__logo {
@@ -12,6 +23,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    padding: 50px 110px;
+    padding: 54px 110px;
+    padding-right: 90px;
   }
 }

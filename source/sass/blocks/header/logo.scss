@@ -5,14 +5,47 @@
   padding: 11px 20px;
 }
 
+.logo__link {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .logo__toggle {
   width: 24px;
   height: 18px;
   padding: 0;
 
   background-color: #ffffff;
-  background-image: url("../img/icon-close.svg");
+  background-image: url("../img/icon-mobile-menu.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
+
+  &--open {
+    background-image: url("../img/icon-close.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo__image {
+    width: 173px;
+    height: 58px;
+  }
+
+  .logo__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__image {
+    width: 202px;
+    height: 59px;
+  }
 }
