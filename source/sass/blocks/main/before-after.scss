@@ -275,7 +275,7 @@
     justify-content: space-between;
     padding-top:10px;
     padding-bottom: 65px;
-    background-image: linear-gradient(to right, #f2f2f2 0, #f2f2f2 25%, #eaeaea 25%, #eaeaea 100%);
+    background-image: linear-gradient(to left, #eaeaea 0, #eaeaea 395px, $bg 395px, $bg 100%);
   }
 
   .before-after__content-box {
