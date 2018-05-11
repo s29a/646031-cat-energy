@@ -4,8 +4,8 @@
 
 .selection__title {
   margin: 0;
-  margin-top: 25px;
-  margin-bottom: 30px;
+  margin-top: 15px;
+  margin-bottom: 25px;
   padding: 0;
 
   font-weight: 400;
@@ -18,7 +18,7 @@
 .selection__text {
   width: 230px;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 39px;
   padding: 0;
 
   color: $textcolor-dark;
@@ -26,29 +26,51 @@
 }
 
 .selection__fieldset {
-  margin: 0;
-  padding: 0;
-
   font-size: 16px;
   line-height: 18px;
   color: #222222;
   text-transform: uppercase;
 
-  border: none;
+  &--personal {
+    margin-bottom: 25px;
+  }
 
-  &--border {
+  &--type {
     margin: 0 -20px;
-    padding: 15px 0;
+    padding: 15px 20px;
 
     border-top: 1px solid $border-light;
     border-bottom: 1px solid $border-light;
+
+    .selection__block {
+      margin: 0;
+    }
   }
+
+  &--contacts {
+    .selection__label {
+      margin-right: 10px;
+    }
+  }
+
+  &--add {
+    .selection__block {
+      margin: 0;
+    }
+  }
+
 }
 
+.selection__wrapper {
+  margin-top: 28px;
+  margin-bottom: 34px;
+}
 
 .selection__block {
+  position: relative;
   display: flex;
   align-items: baseline;
+  margin-bottom: 15px;
 }
 
 .selection__label {
@@ -82,7 +104,7 @@
 .selection__checkbox-label {
   display: flex;
   align-items: center;
-  margin: 6px 0;
+  margin-bottom: 12px;
 
   &::before {
     content: "";
@@ -100,15 +122,54 @@
   }
 }
 
-.selection__text-field {
-  flex-grow: 1;
-  margin-bottom: 15px;
-  padding: 15px;
+.selection__text-field,
+.selection__comment {
+  padding: 12px 15px;
 
-  font: inherit;
+  font-family: inherit;
+  font-size: 16px;
   text-transform: uppercase;
 
   border: 1px solid $menu-border;
+  outline: none;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 1px solid $textcolor;
+  }
+}
+
+.selection__text-field {
+  flex-grow: 1;
+
+  &:focus + .selection__icon {
+    fill: $button-bg;
+  }
+
+  &:invalid {
+    border: 1px solid $error-color;
+  }
+
+  &:invalid + .selection__icon {
+    fill: $error-color;
+  }
+}
+
+.selection__icon {
+  position: absolute;
+
+  &--mail {
+    right: 15px;
+    top: 15px;
+  }
+
+  &--phone {
+    right: 13px;
+    top: 13px;
+  }
 }
 
 .selection__list {
@@ -137,97 +198,213 @@
   }
 }
 
-.selection__fieldset-title {
-  margin: 30px 0;
-  padding: 0;
-
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  text-transform: none;
-}
-
-.selection__wrapper {
-  display: flex;
-  align-items: center;
-  padding-left: 20px;
-
-  &::after {
-    content: "";
-
-    flex-grow: 1;
-    width: 175px;
-    height: 3px;
-    margin-left: 25px;
-
-    background-color: $button-bg;
-  }
-}
-
 .selection__button-wrapper {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .selection__button {
   width: 100%;
-  margin-top: 35px;
+  margin-top: 24px;
 }
 
 .selection__sub {
+  font-family: "Arial", sans-serif;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 20px;
   padding: 0;
 }
 
 .selection__comment {
+  padding-right: 10px;
   box-sizing: border-box;
   width: 100%;
   height: 150px;
-  padding: 13px;
-
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  font-family: "Oswald", "Arial", sans-serif;
-  text-transform: uppercase;
-
-  border: 1px solid $menu-border;
 
   resize: none;
 }
 
 @media (min-width: $tablet-width) {
+  .selection__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 28px;
+    margin-bottom: 55px;
+  }
+
+  .selection__text {
+    width: 330px;
+    padding-left: 40px;
+    margin-bottom: 53px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .selection__block {
+    margin-bottom: 21px;
+  }
+
   .selection__fieldset {
-    &--border {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 41px;
+    padding-right: 38px;
+    padding-top: 12px;
+
+    &--personal {
+      margin-bottom: 70px;
+    }
+
+    &--type {
+      margin-left: 41px;
+      margin-right: 38px;
+      margin-bottom: 74px;
+      padding-top: 19px;
+      padding-bottom: 18px;
+      padding-left: 29px;
+      padding-right: 29px;
+
       border: 1px solid $border-light;
+    }
+
+    &--contacts {
+      padding-left: 70px;
+      padding-right: 65px;
+
+      .selection__label {
+        margin-right: 17px;
+      }
+    }
+
+    &--comment {
+      padding-right: 67px;
+      padding-left: 70px;
+    }
+
+    &--add {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+  }
+
+  .selection__icon {
+    &--mail {
+      top: 20px;
+      right: 21px;
+    }
+
+    &--phone {
+      top: 16px;
+      right: 18px;
+    }
+  }
+
+  .selection__fieldset-title-br {
+    display: none;
+  }
+
+  .selection__text-field,
+  .selection__comment {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px 20px;
+  }
+
+  .selection__comment {
+    height: 172px;
+    padding-top: 13px;
+  }
+
+  .selection__wrapper {
+    margin: 65px 0;
+
+    &--last {
+      margin-bottom: 45px;
+    }
+  }
+
+  .selection__radio-label {
+    margin-top: 8px;
+    margin-bottom: 9px;
+
+    &::before {
+      width: 18px;
+      height: 18px;
+      margin-right: 20px;
+    }
+  }
+
+  .selection__checkbox-label {
+    margin-bottom: 32px;
+    &::before {
+      width: 38px;
+      height: 38px;
+      margin-right: 18px;
     }
   }
 
   .selection__button-wrapper {
     display: flex;
-    align-items: baseline;
+    padding-left: 70px;
+    padding-right: 70px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 75px;
   }
 
   .selection__button,
   .selection__sub {
-    flex-basis: 50%;
+    width: 284px;
+  }
+
+  .selection__button {
+    padding: 15px;
+    font-size: 20px;
+  }
+
+  .selection__sub {
+    font-size: 16px;
+    text-align: left;
   }
 
   .selection__list--columns {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    .selection__block {
+      width: 284px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .selection__title {
+    margin-top: 20px;
+  }
+
+  .selection__text {
+    padding-left: 0;
+    margin-bottom: 65px;
+  }
+
+  .selection__fieldset {
+    padding: 0;
+    margin: 0;
+
+    &--type {
+      padding: 18px 30px;
+      margin-bottom: 22px;
+    }
+  }
+
   .selection__column {
     display: flex;
     justify-content: space-between;
 
-    .selection__block,
     .selection__fieldset {
-      flex-basis: 50%;
+      width: 570px;
+      box-sizing: border-box;
     }
   }
 }
