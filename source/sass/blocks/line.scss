@@ -1,7 +1,7 @@
 .line {
   display: flex;
 
-  background-image: linear-gradient(to bottom,transparent 0,transparent 13px,#68b738 13px,#68b738 16px,transparent 16px,transparent 100%);
+  background-image: linear-gradient(to bottom, transparent 0, transparent 13px, $button-bg 13px, $button-bg 16px, transparent 16px, transparent 100%);
 }
 
 .line__title {
@@ -19,7 +19,7 @@
 
 @media (min-width: $tablet-width) {
   .line {
-    background-image: linear-gradient(to bottom,transparent 0,transparent 22px,#68b738 22px,#68b738 25px,transparent 25px,transparent 100%);
+    background-image: linear-gradient(to bottom, transparent 0, transparent 22px, $button-bg 22px, $button-bg 25px, transparent 25px, transparent 100%);
   }
 
   .line__title {
@@ -30,6 +30,7 @@
     line-height: 36px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .line__title {
     margin-left: 70px;
