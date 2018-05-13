@@ -59,17 +59,19 @@
   }
 
   .site-list__item {
-    padding: 0;
     margin: 0 18px;
+    padding: 0;
+
     border: none;
   }
 
   .site-list__link {
+    padding-top: 12px;
+    padding-bottom: 8px;
+
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
-    padding-top: 12px;
-    padding-bottom: 8px;
 
     &--active {
       border-bottom: 2px solid $button-bg;
@@ -79,7 +81,6 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-
     &--index {
       .site-list__link {
         color: #ffffff;
@@ -96,4 +97,3 @@
     line-height: 25px;
   }
 }
-

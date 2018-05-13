@@ -6,13 +6,14 @@
 }
 
 .before-after__title {
-  font-size: 36px;
-  line-height: 60px;
-  color: $textcolor-dark;
-  font-weight: 400;
   margin: 0;
   margin-bottom: 23px;
   padding: 0;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  color: $textcolor-dark;
 }
 
 .before-after__text {
@@ -74,6 +75,7 @@
 .before-after__text-sub {
   margin: 0;
   padding: 0;
+
   font-size: 14px;
   line-height: 20px;
   text-align: center;
@@ -114,10 +116,10 @@
 }
 
 .before-after__toggle {
+  display: flex;
   width: 72px;
   height: 6px;
   padding: 3px 5px;
-  display: flex;
 
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
@@ -139,21 +141,24 @@
   .before-after {
     padding-top: 43px;
     padding-bottom: 70px;
+
+    background-color: #ffffff;
     background-image: linear-gradient(to right, $bg 0, $bg 50%, #eaeaea 50%, #eaeaea 100%);
     background-repeat: no-repeat;
-    background-size: 100% 43%;
     background-position: bottom;
-    background-color: #ffffff;
+    background-size: 100% 43%;
     border-top: 1px solid $menu-border;
   }
 
   .before-after__title {
     margin-bottom: 65px;
+
     font-size: 60px;
   }
 
   .before-after__text {
     margin-bottom: 55px;
+
     font-size: 16px;
     line-height: 24px;
   }
@@ -180,11 +185,14 @@
   }
 
   .before-after__stat-sub {
-    font-size: 14px;
-    line-height: 14px;
+    bottom: -7px;
+
     width: auto;
     padding: 0 10px;
-    bottom: -7px;
+
+    font-size: 14px;
+    line-height: 14px;
+
     background-color: #ffffff;
   }
 
@@ -192,9 +200,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10px 0;
-    font-size: 20px;
     width: 190px;
+    padding: 10px 0;
+
+    font-size: 20px;
     text-align: right;
   }
 
@@ -208,9 +217,9 @@
     }
 
     &--after {
-      margin-left: -338px;
-      margin-right: -12px;
       display: inline;
+      margin-right: -12px;
+      margin-left: -338px;
     }
   }
 
@@ -220,13 +229,15 @@
 
   .before-after__button-wrapper {
     width: 570px;
-    padding: 0;
     margin-top: 11px;
+    padding: 0;
   }
 
   .before-after__button {
-    font-size: 20px;
     padding: 5px 0;
+
+    font-size: 20px;
+
     border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
 
     &:hover,
@@ -240,20 +251,22 @@
   }
 
   .before-after__toggle {
-    width: 428px;
     justify-content: center;
-    border: none;
-    background-color: #dcdcdc;
+    width: 428px;
     padding: 0;
 
+    background-color: #dcdcdc;
+    border: none;
+
     &::before {
+      align-self: center;
+      box-sizing: border-box;
       width: 34px;
       height: 34px;
-      border-radius: 50%;
-      align-self: center;
+
+      background-image: radial-gradient($button-bg 0, $button-bg 4px, #ffffff 4px, #ffffff 100% );
       border: 1px solid $menu-border;
-      box-sizing: border-box;
-      background-image: radial-gradient($button-bg 0, $button-bg 4px, #fff 4px, #fff 100% );
+      border-radius: 50%;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
     }
 
@@ -270,12 +283,13 @@
 
 @media (min-width: $desktop-width) {
   .before-after {
-    border: none;
     display: flex;
     justify-content: space-between;
-    padding-top:10px;
+    padding-top: 10px;
     padding-bottom: 65px;
+
     background-image: linear-gradient(to left, #eaeaea 0, #eaeaea 395px, $bg 395px, $bg 100%);
+    border: none;
   }
 
   .before-after__content-box {
@@ -288,8 +302,8 @@
   }
 
   .before-after__text {
-    margin-bottom: 65px;
     width: 435px;
+    margin-bottom: 65px;
   }
 
   .before-after__block {
@@ -317,8 +331,8 @@
     }
 
     &--after {
-      margin-left: -364px;
       margin-right: 72px;
+      margin-left: -364px;
     }
   }
 

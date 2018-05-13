@@ -1,12 +1,12 @@
 .first-screen {
-  text-align: center;
-  color: #ffffff;
   padding-top: 25px;
 
+  text-align: center;
+  color: #ffffff;
+
   background-color: $img-color;
-  background-image:
-    linear-gradient(to top,#fff 173px,transparent 173px),
-    url("../img/index-background-mobile@1x.jpg");
+  background-image: linear-gradient(to top,#ffffff 173px,transparent 173px),
+  url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -35,38 +35,44 @@
 }
 
 .first-screen__button {
+  margin-top: 135px;
+
   font-size: 14px;
   line-height: 18px;
-  margin-top: 135px;
 }
 
 @media (min-width: $tablet-width) {
   .first-screen {
     position: relative;
-    background-color: #ffffff;
-    background-image: none;
-    text-align: left;
-    padding-top: 28px;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding-top: 28px;
+
+    text-align: left;
+
+    background-color: #ffffff;
+    background-image: none;
   }
 
   .first-screen__title {
+    width: 430px;
     margin-bottom: 42px;
+    margin-left: 88px;
+
     font-size: 60px;
     line-height: 60px;
     color: $textcolor-dark;
-    width: 430px;
-    margin-left: 88px;
   }
 
   .first-screen__slogan {
-    color: $textcolor-dark;
+    margin-bottom: 20px;
+    margin-left: 88px;
+
     font-size: 20px;
     line-height: 20px;
-    margin-left: 88px;
-    margin-bottom: 20px;
+    color: $textcolor-dark;
   }
 
   .first-screen__image-wrapper {
@@ -79,10 +85,12 @@
 
   .first-screen__button {
     position: absolute;
-    margin-top: 0;
-    left: 120px;
     top: 258px;
+    left: 120px;
+
+    margin-top: 0;
     padding: 16px 25px;
+
     font-size: 20px;
     line-height: 20px;
   }
@@ -92,18 +100,20 @@
   .first-screen {
     min-height: 525px;
     padding-top: 52px;
-    background-color:transparent;
+
+    background-color: transparent;
 
     &::before {
       content: "";
+      position: absolute;
+      top: -171px;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+
+      display: block;
       width: 50%;
       height: 696px;
-      z-index: -1;
-      top: -171px;
-      bottom: 0;
-      right: 0;
-      display: block;
-      position: absolute;
 
       background-color: #64a83b;
       background-image: url("../img/index-background-mobile@1x.jpg");
@@ -116,19 +126,19 @@
   }
 
   .first-screen__slogan {
-    margin-left: 80px;
     margin-bottom: 0;
+    margin-left: 80px;
   }
 
   .first-screen__image {
     position: absolute;
-    z-index: 1;
-    left: 560px;
     top: -29px;
+    left: 560px;
+    z-index: 1;
   }
 
   .first-screen__button {
-    left: 190px;
     top: 286px;
+    left: 190px;
   }
 }

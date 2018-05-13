@@ -38,6 +38,7 @@
   padding: 0;
 
   list-style: none;
+
   border-bottom: 1px solid $border-light;
 }
 
@@ -108,22 +109,25 @@
   }
 
   .extra__title-wrapper {
-    padding-left: 0;
     padding-top: 70px;
+    padding-left: 0;
 
     &::before {
       content: "";
+
       display: block;
       width: 28px;
       height: 3px;
       margin-top: 6px;
+
       background-color: #68b738;
     }
   }
 
   .extra__title {
-    margin-left: 40px;
     margin-right: 35px;
+    margin-left: 40px;
+
     font-size: 36px;
     line-height: 36px;
   }
@@ -137,15 +141,17 @@
   }
 
   .extra__item {
-    padding: 28px 38px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 28px 38px;
+
     border: 1px solid $menu-border;
   }
 
   .extra__item-title {
     margin-bottom: 26px;
+
     font-size: 20px;
   }
 
@@ -156,6 +162,7 @@
 
   .extra__item-cost {
     width: 93px;
+
     text-align: right;
   }
 
@@ -165,11 +172,12 @@
 
   .extra__promo {
     display: flex;
-    min-height: 200px;
-    box-sizing: border-box;
-    padding-left: 90px;
-    padding-right: 115px;
     justify-content: space-between;
+    box-sizing: border-box;
+    min-height: 200px;
+    padding-right: 115px;
+    padding-left: 90px;
+
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-size: 100% 100%;
 
@@ -179,16 +187,16 @@
   }
 
   .extra__promo-text {
-    text-align: left;
     margin: 0;
     padding-top: 8px;
-  }
 
+    text-align: left;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .extra {
-    margin-bottom: 90px;
+    margin-bottom: 87px;
   }
 
   .extra__title-wrapper {
@@ -210,8 +218,9 @@
 
   .extra__item {
     flex-wrap: nowrap;
-    padding: 15px 0;
     align-items: baseline;
+    padding: 15px 0;
+
     border-right: none;
     border-left: none;
   }
@@ -228,21 +237,23 @@
 
   .extra__item-cost {
     width: 83px;
+
     text-align: left;
   }
 
   .extra__button {
-    width: 245px;
     box-sizing: border-box;
+    width: 245px;
   }
 
   .extra__promo {
-    margin-top: 0;
-    width: 245px;
     flex-direction: column;
     align-items: center;
-    padding-left: 0;
+    width: 245px;
+    margin-top: 0;
     padding-right: 0;
+    padding-left: 0;
+
     background-image: url("../img/gift-photo-desktop@1x.jpg");
 
     @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {

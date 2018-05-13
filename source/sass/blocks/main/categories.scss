@@ -75,8 +75,8 @@
   margin: 0;
   margin-top: 8px;
   margin-bottom: 30px;
-  padding: 0;
   margin-left: 70px;
+  padding: 0;
 
   font-weight: 400;
   font-size: 24px;
@@ -87,9 +87,9 @@
 
 .categories__text {
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
   padding-bottom: 20px;
-  margin-bottom: 20px;
 
   font-family: "Arial", sans-serif;
 
@@ -136,51 +136,57 @@
   }
 
   .categories__item {
-    padding: 66px 280px 60px 53px;
     margin-bottom: 35px;
+    padding: 66px 280px 60px 53px;
 
     &::before {
-      width: 200px;
-      height: 200px;
       top: 90px;
       right: 62px;
       left: auto;
+
+      width: 200px;
+      height: 200px;
     }
 
     &--slim::after {
+      top: 77px;
+      right: 92px;
+      left: auto;
+
       width: 140px;
       height: 194px;
-      left: auto;
-      right: 92px;
-      top: 77px;
     }
 
     &--pro {
-      padding-right: 315px;
       margin-bottom: 0;
+      padding-right: 315px;
 
       &::after {
+        top: 132px;
+        right: 28px;;
+        left: auto;
+
         width: 268px;
         height: 112px;
-        top: 132px;
-        left: auto;
-        right: 28px
       }
     }
   }
 
   .categories__title {
+    margin-bottom: 25px;
     margin-left: 0;
+
     font-size: 36px;
     line-height: 37px;
-    margin-bottom: 25px;
   }
 
   .categories__text {
+    margin-bottom: 35px;
+
     font-size: 16px;
     line-height: 24px;
+
     border: none;
-    margin-bottom: 35px;
   }
 
   .categories__link {
@@ -207,32 +213,35 @@
 
   .categories__item {
     flex-basis: 38%;
-    padding: 52px;
-    padding-bottom: 63px;
-    padding-right: 55px;
     margin-bottom: 40px;
+    padding: 52px;
+    padding-right: 55px;
+    padding-bottom: 63px;
 
     &::before {
-      width: 100px;
-      height: 100px;
       top: 47px;
       left: 52px;
+
+      width: 100px;
+      height: 100px;
     }
 
     &--pro::after {
+      top: 68px;
+      right: auto;
+      left: 34px;
+
       width: 134px;
       height: 56px;
-      top: 68px;
-      left: 34px;
-      right: auto;
     }
 
     &--slim::after {
+      top: 40px;
+      right: auto;
+      left: 66px;
+
       width: 70px;
       height: 97px;
-      top: 40px;
-      left: 66px;
-      right: auto;
     }
 
     &:last-child {
@@ -241,9 +250,9 @@
   }
 
   .categories__title {
-    margin-left: 163px;
     margin-top: 23px;
     margin-bottom: 74px;
+    margin-left: 163px;
   }
 
   .categories__text {
