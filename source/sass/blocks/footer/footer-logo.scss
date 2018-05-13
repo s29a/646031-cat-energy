@@ -1,5 +1,9 @@
 .footer-logo {
   text-align: center;
+
+  &--index {
+    pointer-events: none;
+  }
 }
 
 .footer-logo__image {
@@ -21,5 +25,9 @@
 @media (min-width: $tablet-width) {
   .footer-logo {
     text-align: left;
+  }
+
+  .footer-logo__image {
+    padding: 0;
   }
 }

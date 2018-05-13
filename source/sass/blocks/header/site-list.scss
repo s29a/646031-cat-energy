@@ -44,11 +44,6 @@
   &--active {
     pointer-events: none;
   }
-
-  &--active:hover,
-  &--active:focus {
-    opacity: 1;
-  }
 }
 
 @media (min-width: $tablet-width) {

@@ -289,6 +289,7 @@
     padding-bottom: 65px;
 
     background-image: linear-gradient(to left, #eaeaea 0, #eaeaea 395px, $bg 395px, $bg 100%);
+    background-size: 100% 70%;
     border: none;
   }
 
@@ -313,6 +314,10 @@
 
   .before-after__wrapper {
     margin-bottom: 52px;
+  }
+
+  .before-after__stat-sub {
+    background-color: $bg;
   }
 
   .before-after__text-sub {
