@@ -1,15 +1,17 @@
+.social {
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+}
+
 .social__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 20px;
+  padding: 0;
 
   list-style: none;
-
-  border-top: 1px solid $border-color;
-  border-bottom: 1px solid $border-color;
 }
 
 .social__icon {
@@ -18,7 +20,7 @@
 
 .social__link {
   display: block;
-  width: 58px;
+  width: 54px;
 
   text-align: center;
 
@@ -26,10 +28,36 @@
   &:focus > .social__icon {
     fill: $button-bg;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .social__list {
+  .social {
     border: none;
+  }
+
+  .social__list {
+    padding: 0;
+  }
+
+  .social__icon {
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--in {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+      margin-left: -12px;
+    }
   }
 }

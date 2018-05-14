@@ -1,16 +1,33 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
+
   background-color: $bg;
 }
 
-.page-footer__wrapper {
-  display: flex;
-  flex-direction: column;
+.page-footer__block {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer__wrapper {
+  .page-footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .page-footer__block {
+    padding: 0;
+    width: 33.33%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 60px;
+    padding-bottom: 56px;
   }
 }

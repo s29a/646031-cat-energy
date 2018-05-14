@@ -1,6 +1,6 @@
 .catalog__title {
   margin: 0;
-  padding: 25px 20px 30px;
+  padding: 15px 20px 28px;
 
   font-weight: 400;
   font-size: 36px;
@@ -22,30 +22,62 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0 20px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 
   border-bottom: 1px solid $border-light;
+
+  &--plus {
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 20px;
+
+    text-align: center;
+
+    .catalog__image {
+      width: 30px;
+      height: 30px;
+
+      opacity: 0.2;
+    }
+
+    .catalog__description {
+      width: auto;
+      margin-bottom: 20px;
+    }
+
+    .catalog__item-title {
+      width: auto;
+      margin-top: 23px;
+      margin-bottom: 9px;
+    }
+
+    .catalog__item-text {
+      font-size: 12px;
+      line-height: 16px;
+      font-family: "Arial", sans-serif;
+    }
+  }
+}
+
+.catalog__image-wrapper {
+  height: 144px;
 }
 
 .catalog__description {
   flex-grow: 1;
-
-  font-size: 12px;
-  line-height: 16px;
-  font-family: "Arial", sans-serif;
+  width: 140px;
 }
 
 .catalog__item-title {
   width: 55%;
   margin: 0;
   margin-top: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   padding: 0;
 
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Oswald", "Arial", sans-serif;
   color: $textcolor-dark;
   text-transform: uppercase;
 }
@@ -53,7 +85,11 @@
 .catalog__table {
   width: 100%;
 
+  border-collapse: collapse;
   border-spacing: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
 }
 
 .catalog__field {
@@ -70,7 +106,6 @@
 
 .catalog__link {
   width: 100%;
-  margin-top: 20px;
 
   &--grey {
     width: 100%;
@@ -90,21 +125,6 @@
   }
 }
 
-.catalog__item--plus {
-  flex-direction: column;
-  padding: 25px 20px;
-
-  text-align: center;
-
-  .catalog__image {
-    opacity: 0.2;
-  }
-
-  .catalog__item-title {
-    width: auto;
-  }
-}
-
 .catalog__item-text {
   margin: 0;
   padding: 0;
@@ -112,12 +132,16 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
+    padding-top: 30px;
     padding-right: 30px;
     padding-left: 30px;
   }
 
   .catalog__title {
+    margin-bottom: 22px;
     padding: 0;
+
+    font-size: 60px;
 
     border: none;
   }
@@ -129,21 +153,108 @@
   }
 
   .catalog__item {
-    flex-basis: 50%;
+    flex-direction: column;
+    align-items: center;
     box-sizing: border-box;
-    padding: 0;
+    width: 324px;
+    padding-top: 59px;
+    padding-right: 38px;
+    padding-bottom: 40px;
+    padding-left: 38px;
 
+    background-image: linear-gradient(#ffffff 0, #ffffff 140px, $bg 140px, $bg 100%);
     border: none;
+
+    &--plus {
+      margin-top: 140px;
+
+      background-color: $bg;
+      background-image: none;
+
+      .catalog__image {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 25px;
+      }
+
+      .catalog__description {
+        width: 179px;
+      }
+
+      .catalog__item-title {
+        margin-bottom: 28px;
+      }
+
+      .catalog__item-text {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .catalog__description {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .catalog__item-title {
+    width: 135px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .catalog__table {
+    font-size: 16px;
+  }
+
+  .catalog__table-row {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .catalog__field,
+  .catalog__value {
+    padding: 8px 0;
+  }
+
+  .catalog__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .catalog__image-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 208px;
+    margin-bottom: 40px;
+  }
+
+  .catalog__link {
+    box-sizing: border-box;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog {
+    padding-top: 20px;
     padding-right: 110px;
     padding-left: 110px;
   }
 
   .catalog__item {
-    flex-basis: 25%;
+    width: 245px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .catalog__description {
+    width: 169px;
+  }
+
+  .catalog__link {
+    width: 169px;
   }
 }
