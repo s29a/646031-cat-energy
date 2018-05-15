@@ -5,7 +5,9 @@
   padding: 12px 20px;
 
   &--index {
-    pointer-events: none;
+    .logo__link {
+      pointer-events: none;
+    }
   }
 }
 

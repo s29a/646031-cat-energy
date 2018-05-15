@@ -157,10 +157,9 @@
     align-items: center;
     box-sizing: border-box;
     width: 324px;
+    padding: 0;
     padding-top: 59px;
-    padding-right: 38px;
     padding-bottom: 40px;
-    padding-left: 38px;
 
     background-image: linear-gradient(#ffffff 0, #ffffff 140px, $bg 140px, $bg 100%);
     border: none;
@@ -168,8 +167,8 @@
     &--plus {
       margin-top: 140px;
 
-      background-color: $bg;
       background-image: none;
+      border: 1px solid $menu-border;
 
       .catalog__image {
         width: 60px;
@@ -192,7 +191,7 @@
   }
 
   .catalog__description {
-    width: 100%;
+    width: 76.55%;
     margin-bottom: 30px;
   }
 
@@ -234,6 +233,7 @@
 
   .catalog__link {
     box-sizing: border-box;
+    width: 76.55%;
   }
 }
 

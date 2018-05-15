@@ -9,6 +9,12 @@
     url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
+  background-size: 100%, 320px 305px;
+
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    background-image: linear-gradient(to top, #ffffff 173px, transparent 173px),
+      url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .first-screen__title {
@@ -116,8 +122,13 @@
       height: 696px;
 
       background-color: #64a83b;
-      background-image: url("../img/index-background-mobile@1x.jpg");
+      background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
+      background-size: 720px 696px;
+
+      @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 

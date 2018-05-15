@@ -6,12 +6,9 @@
   }
 }
 
-.footer-logo__image {
-  padding-top: 20px;
-  padding-bottom: 8px;
-}
-
 .footer-logo__link {
+  display: block;
+
   &:hover,
   &:focus {
     opacity: 0.8;

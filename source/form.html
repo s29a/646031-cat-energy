@@ -11,7 +11,7 @@
     <header class="page-header">
       <nav class="main-nav main-nav--no-js">
         <div class="main-nav__logo logo">
-          <a class="logo__link">
+          <a class="logo__link" href="index.html">
             <picture>
               <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -44,11 +44,11 @@
             <div class="selection__fieldset selection__fieldset--personal">
               <div class="selection__block">
                 <label class="selection__label" for="name">Имя:*</label>
-                <input class="selection__text-field" type="text" id="name" name="name" placeholder="Барсик">
+                <input class="selection__text-field" type="text" id="name" name="name" placeholder="Барсик" required>
               </div>
               <div class="selection__block">
                 <label class="selection__label" for="weight">Вес (кг):*</label>
-                <input class="selection__text-field" type="text" id="weight" name="weight" placeholder="7">
+                <input class="selection__text-field" type="text" id="weight" name="weight" placeholder="7" required>
               </div>
               <div class="selection__block">
                 <label class="selection__label" for="age">Возраст (лет):</label>
@@ -58,15 +58,15 @@
             <div class="selection__fieldset selection__fieldset--type">
               <ul class="selection__list">
                 <li class="selection__block">
-                  <input class="selection__radio" type="radio" id="slim" name="program" value="slim" checked>
+                  <input class="visually-hidden selection__radio" type="radio" id="slim" name="program" value="slim" checked>
                   <label class="selection__radio-label" for="slim">Похудение</label>
                 </li>
                 <li class="selection__block">
-                  <input class="selection__radio" type="radio" id="pro" name="program" value="pro">
+                  <input class="visually-hidden selection__radio" type="radio" id="pro" name="program" value="pro">
                   <label class="selection__radio-label" for="pro">Набор массы</label>
                 </li>
                 <li class="selection__block">
-                  <input class="selection__radio" type="radio" id="none" name="program" value="none">
+                  <input class="visually-hidden selection__radio" type="radio" id="none" name="program" value="none">
                   <label class="selection__radio-label" for="none">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
@@ -78,14 +78,14 @@
           <div class="selection__fieldset selection__fieldset--contacts container">
             <div class="selection__block">
               <label class="selection__label" for="email">E-mail:*</label>
-              <input class="selection__text-field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
+              <input class="selection__text-field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
               <svg class="selection__icon selection__icon--mail" xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13">
                 <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"/>
               </svg>
             </div>
             <div class="selection__block">
               <label class="selection__label" for="phone">Телефон:*</label>
-              <input class="selection__text-field" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+              <input class="selection__text-field" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
               <svg class="selection__icon selection__icon--phone" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                 <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
                 <path d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
@@ -107,19 +107,19 @@ C7.8,20,8.1,19.7,8.1,19.4z"/>
           <div class="selection__fieldset selection__fieldset--add container">
             <ul class="selection__list selection__list--columns">
               <li class="selection__block">
-                <input class="selection__checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
+                <input class="visually-hidden selection__checkbox" type="checkbox" id="sweetener" name="sweetener" checked>
                 <label class="selection__checkbox-label" for="sweetener">Сахарозаменитель</label>
               </li>
               <li class="selection__block">
-                <input class="selection__checkbox" type="checkbox" id="water" name="water">
+                <input class="visually-hidden selection__checkbox" type="checkbox" id="water" name="water">
                 <label class="selection__checkbox-label" for="water">Питьевая вода</label>
               </li>
               <li class="selection__block">
-                <input class="selection__checkbox" type="checkbox" id="milk" name="milk">
+                <input class="visually-hidden selection__checkbox" type="checkbox" id="milk" name="milk">
                 <label class="selection__checkbox-label" for="milk">Молоко</label>
               </li>
               <li class="selection__block">
-                <input class="selection__checkbox" type="checkbox" id="vitamins" name="vitamins">
+                <input class="visually-hidden selection__checkbox" type="checkbox" id="vitamins" name="vitamins">
                 <label class="selection__checkbox-label" for="vitamins">Витамины</label>
               </li>
             </ul>
@@ -142,8 +142,8 @@ C7.8,20,8.1,19.7,8.1,19.4z"/>
       </section>
     </main>
     <footer class="page-footer container">
-      <div class="page-footer__block footer-logo">
-        <a class="footer-logo__link" href="#">
+      <div class="page-footer__block page-footer__block--logo footer-logo">
+        <a class="footer-logo__link" href="index.html">
           <img class="footer-logo__image" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy Logo">
         </a>
       </div>
