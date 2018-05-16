@@ -135,7 +135,7 @@
     padding-left: 90px;
 
     background-image: url("../img/gift-photo-tablet@1x.jpg");
-    background-size: 100% 100%;
+    background-size: 100%;
 
     @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
       background-image: url("../img/gift-photo-tablet@2x.jpg");
@@ -167,6 +167,7 @@
 
   .extra__list {
     margin: 0;
+    margin-right: 40px;
   }
 
   .extra__item {

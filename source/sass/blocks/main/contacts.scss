@@ -54,6 +54,11 @@
     center -40px;
   background-size: 62px 53px,
     cover;
+
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    background-image: url("../img/map-pin.png"),
+      url("../img/bg-map-mobile@2x.png");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -115,5 +120,17 @@
 
   .contacts__adress-wrapper {
     text-align: left;
+  }
+
+  .contacts__map-wrapper {
+    background-image: url("../img/map-pin.png"),
+      url("../img/bg-map-desktop@1x.png");
+    background-position: 76% 149px,
+      center;
+
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+      background-image: url("../img/map-pin.png"),
+        url("../img/bg-map-desktop@2x.png");
+    }
   }
 }
