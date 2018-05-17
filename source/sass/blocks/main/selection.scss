@@ -239,7 +239,7 @@
 
 @media (min-width: $tablet-width) {
   .selection__title {
-    margin-top: 28px;
+    margin-top: 30px;
     margin-bottom: 55px;
 
     font-size: 60px;
@@ -376,6 +376,7 @@
   }
 
   .selection__button {
+    margin-top: 22px;
     padding: 15px;
 
     font-size: 20px;
@@ -474,5 +475,9 @@
   .selection__button,
   .selection__sub {
     width: 46.75%;
+  }
+
+  .selection__button {
+    margin-top: 25px;
   }
 }
