@@ -82,11 +82,10 @@ function initMap() {
       }
 
       if(document.body.clientWidth >= 1300) {
-         map.setCenter(new google.maps.LatLng(59.939065, 30.319335));
+        map.setCenter(new google.maps.LatLng(59.939065, 30.319335));
       } else {
-         map.setCenter(new google.maps.LatLng(59.938800, 30.323200));
+        map.setCenter(new google.maps.LatLng(59.938800, 30.323200));
       }
     });
   }
 }
-

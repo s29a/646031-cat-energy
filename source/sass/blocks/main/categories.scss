@@ -11,9 +11,9 @@
 }
 
 .categories__icon {
-    content: "";
-    position: absolute;
-    z-index: 1;
+  content: "";
+  position: absolute;
+  z-index: 1;
 }
 
 .categories__item {
@@ -90,6 +90,7 @@
 
 .categories__link {
   position: relative;
+
   display: flex;
   align-items: center;
 
@@ -107,17 +108,21 @@
 
 .categories__link-text {
   z-index: 1;
+
+  margin: 0;
+  padding-right: 10px;
+
   font-size: 16px;
   line-height: 16px;
   color: $textcolor-dark;
   text-transform: uppercase;
-  padding-right: 10px;
-  margin: 0;
+
   background-color: $bg;
 }
 
 .categories__arrow {
   width: 29px;
+
   transform: translateX(-5px);
 }
 
@@ -185,6 +190,7 @@
 
   .categories__link-text {
     padding-right: 22px;
+
     font-size: 20px;
     line-height: 20px;
   }
