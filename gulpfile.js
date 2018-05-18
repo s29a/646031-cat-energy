@@ -102,7 +102,8 @@ gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**/*.{png,jpg}",
-    "source/img/icon-tick.svg"
+    "source/img/icon-tick.svg",
+    "source/js/lib/*.js"
   ], {
     base: "source"
   })
