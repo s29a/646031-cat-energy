@@ -416,8 +416,8 @@
       display: flex;
       justify-content: space-between;
       padding-top: 32px;
-      padding-right: 110px;
-      padding-left: 110px;
+      padding-right: 40px;
+      padding-left: 40px;
 
       .selection__block {
         width: 46.75%;
@@ -437,14 +437,14 @@
 
     &--comment {
       padding-top: 35px;
-      padding-right: 110px;
-      padding-left: 110px;
+      padding-right: 40px;
+      padding-left: 40px;
     }
 
     &--add {
       padding-top: 12px;
-      padding-right: 110px;
-      padding-left: 110px;
+      padding-right: 40px;
+      padding-left: 40px;
 
       .selection__block {
         width: 245px;
@@ -468,8 +468,8 @@
   .selection__button-wrapper {
     margin-bottom: 85px;
     padding-top: 5px;
-    padding-right: 110px;
-    padding-left: 110px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   .selection__button,
