@@ -60,12 +60,11 @@
 }
 
 .catalog__item-link {
-  height: 144px;
-
   color: $textcolor-dark;
 }
 
 .catalog__image-wrapper {
+  display: block;
   height: 144px;
 }
 
