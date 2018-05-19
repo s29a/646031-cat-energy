@@ -22,26 +22,51 @@
   }
 }
 
+.logo__toggle-icon {
+  margin: 0 auto;
+
+  &--close {
+    display: none;
+  }
+}
+
 .logo__toggle {
   width: 24px;
   height: 18px;
   padding: 0;
 
   background-color: #ffffff;
-  background-image: url("../img/icon-mobile-menu.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   border: none;
 
   &--open {
-    background-image: url("../img/icon-close.svg");
+    .logo__toggle-icon {
+      &--open {
+        display: none;
+      }
+
+      &--close {
+        display: block;
+      }
+    }
+  }
+}
+
+.logo__image {
+  &--tablet,
+  &--desktop {
+    display: none;
   }
 }
 
 @media (min-width: $tablet-width) {
   .logo__image {
-    width: 173px;
-    height: 58px;
+    &--tablet {
+      display: block;
+    }
+
+    &--mobile {
+      display: none;
+    }
   }
 
   .logo__toggle {
@@ -51,7 +76,12 @@
 
 @media (min-width: $desktop-width) {
   .logo__image {
-    width: 202px;
-    height: 59px;
+    &--desktop {
+      display: block;
+    }
+
+    &--tablet {
+      display: none;
+    }
   }
 }

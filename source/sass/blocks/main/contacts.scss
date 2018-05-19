@@ -109,7 +109,8 @@
   .contacts__wrapper {
     position: absolute;
     top: 97px;
-    left: 110px;
+    left: 40px;
+    z-index: 1;
 
     box-sizing: border-box;
     width: 570px;
@@ -123,6 +124,8 @@
   }
 
   .contacts__map-wrapper {
+    height: 400px;
+
     background-image: url("../img/map-pin.png"),
       url("../img/bg-map-desktop@1x.png");
     background-position: 76% 149px,

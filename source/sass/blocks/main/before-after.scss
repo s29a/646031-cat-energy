@@ -115,7 +115,7 @@
   border: none;
 }
 
-.before-after__toggle {
+.before-after__scale {
   display: flex;
   width: 72px;
   height: 6px;
@@ -124,17 +124,14 @@
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
   border-radius: 15px;
+}
 
-  &::before {
-    content: "";
+.before-after__toggle {
+  width: 35px;
+  height: 6px;
 
-    display: block;
-    width: 35px;
-    height: 6px;
-
-    background-color: $button-bg;
-    border-radius: 10px;
-  }
+  background-color: $button-bg;
+  border-radius: 10px;
 }
 
 @media (min-width: $tablet-width) {
@@ -250,31 +247,31 @@
     }
   }
 
-  .before-after__toggle {
+  .before-after__scale {
     justify-content: center;
     width: 428px;
     padding: 0;
 
     background-color: #dcdcdc;
     border: none;
+  }
 
-    &::before {
-      align-self: center;
-      box-sizing: border-box;
-      width: 34px;
-      height: 34px;
+  .before-after__toggle {
+    align-self: center;
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
 
-      background-image: radial-gradient($button-bg 0, $button-bg 4px, #ffffff 4px, #ffffff 100%);
-      border: 1px solid $menu-border;
-      border-radius: 50%;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-    }
+    background-image: radial-gradient($button-bg 0, $button-bg 4px, #ffffff 4px, #ffffff 100%);
+    border: 1px solid $menu-border;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 
-    &:hover::before {
+    &:hover {
       box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
     }
 
-    &:active::before {
+    &:active {
       border: 2px solid $button-bg;
       box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
     }
@@ -288,7 +285,7 @@
     padding-top: 10px;
     padding-bottom: 65px;
 
-    background-image: linear-gradient(to left, #eaeaea 0, #eaeaea 395px, $bg 395px, $bg 100%);
+    background-image: linear-gradient(to left, #eaeaea 0, #eaeaea 327px, $bg 327px, $bg 100%);
     background-size: 100% 70%;
     border: none;
   }
