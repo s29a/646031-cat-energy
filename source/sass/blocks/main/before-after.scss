@@ -29,7 +29,7 @@
   margin-bottom: 33px;
 }
 
-.before-after__wrapper {
+.before-after__result {
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
@@ -166,7 +166,7 @@
     margin-bottom: 87px;
   }
 
-  .before-after__wrapper {
+  .before-after__result {
     width: 366px;
     margin-bottom: 0;
   }
@@ -280,14 +280,17 @@
 
 @media (min-width: $desktop-width) {
   .before-after {
-    display: flex;
-    justify-content: space-between;
     padding-top: 10px;
     padding-bottom: 65px;
 
-    background-image: linear-gradient(to left, #eaeaea 0, #eaeaea 327px, $bg 327px, $bg 100%);
+    background-image: linear-gradient(to left, #eaeaea 0, #eaeaea calc((100% - 1300px)/2 + 327px), $bg calc((100% - 1300px)/2 + 327px), $bg 100%);
     background-size: 100% 70%;
     border: none;
+  }
+
+  .before-after__wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 
   .before-after__content-box {
@@ -309,7 +312,7 @@
     margin-bottom: 0;
   }
 
-  .before-after__wrapper {
+  .before-after__result {
     margin-bottom: 52px;
   }
 

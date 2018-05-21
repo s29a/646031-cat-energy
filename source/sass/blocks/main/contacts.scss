@@ -109,7 +109,7 @@
   .contacts__wrapper {
     position: absolute;
     top: 97px;
-    left: 40px;
+    left: calc((100% - 1300px)/2 + 40px);
     z-index: 1;
 
     box-sizing: border-box;

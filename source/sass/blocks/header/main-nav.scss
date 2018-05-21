@@ -12,8 +12,8 @@
   .main-nav {
     display: flex;
     justify-content: space-between;
-    padding: 25px 30px;
-    padding-right: 12px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 
   .main-nav__logo {
@@ -23,7 +23,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    padding: 54px 40px;
-    padding-right: 20px;
+    padding-top: 54px;
+    padding-bottom: 54px;
   }
 }
