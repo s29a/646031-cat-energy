@@ -33,8 +33,9 @@
 
 @media (min-width: $desktop-width) {
   .line {
-    padding: 0 calc((100% - 1300px)/2);
+    padding: 0 calc((100% - 1300px) / 2);
   }
+
   .line__title {
     margin-left: 0;
   }
