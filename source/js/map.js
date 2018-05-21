@@ -24,7 +24,7 @@ function initMap() {
   });
 
   var image = new google.maps.MarkerImage(
-    "img/map-pin.png",
+    'img/map-pin.png',
     null,
     null,
     null,

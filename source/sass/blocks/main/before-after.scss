@@ -58,9 +58,7 @@
 }
 
 .before-after__stat-sub {
-  position: absolute;
-  bottom: -16px;
-
+  margin: 9px auto -31px;
   width: 58px;
   padding: 0 15px;
 
@@ -182,8 +180,7 @@
   }
 
   .before-after__stat-sub {
-    bottom: -7px;
-
+    margin-bottom: -23px;
     width: auto;
     padding: 0 10px;
 
