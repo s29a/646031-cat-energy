@@ -12,6 +12,9 @@
 
 @media (min-width: $desktop-width) {
   .container {
+    max-width: 1300px;
+    box-sizing: border-box;
+    margin: 0 auto;
     padding-right: 40px;
     padding-left: 40px;
   }
