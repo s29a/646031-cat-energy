@@ -85,6 +85,10 @@
 
   cursor: pointer;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   &::before {
     content: "";
 
@@ -101,6 +105,10 @@
   &:hover::before {
     box-shadow: 0 0 0 1px #bababa;
   }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
 .selection__checkbox-label {
@@ -109,6 +117,10 @@
   margin-bottom: 12px;
 
   cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &::before {
     content: "";
@@ -123,6 +135,10 @@
 
   &:hover::before {
     border: 1px solid #bababa;
+  }
+
+  &:active::before {
+    opacity: 0.3;
   }
 }
 
