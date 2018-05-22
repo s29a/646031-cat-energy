@@ -3,17 +3,17 @@ var smallPin = {width: 62, height: 53};
 
 function initMap() {
   if(document.body.clientWidth < 768) {
-    var mapCenter = {lat: 59.938800, lng: 30.323200};
+    var mapCenter = {lat: 59.938845, lng: 30.323200};
     var pinCenter = {lat: 59.938800, lng: 30.323200};
     var iconSize = smallPin;
 
   } else if (document.body.clientWidth >= 768 && document.body.clientWidth < 1300) {
-    var mapCenter = {lat: 59.938800, lng: 30.323200};
+    var mapCenter = {lat: 59.939085, lng: 30.323200};
     var pinCenter = {lat: 59.938800, lng: 30.323200};
     var iconSize = bigPin;
 
   } else if (document.body.clientWidth >= 1300) {
-    var mapCenter = {lat: 59.939065, lng: 30.319335};
+    var mapCenter = {lat: 59.939095, lng: 30.319530};
     var pinCenter = {lat: 59.938800, lng: 30.323200};
     var iconSize = bigPin;
   }
@@ -60,10 +60,12 @@ function initMap() {
       );
     }
 
-    if(document.body.clientWidth >= 1300) {
-      map.setCenter(new google.maps.LatLng(59.939065, 30.319335));
+    if (document.body.clientWidth >= 1300) {
+      map.setCenter(new google.maps.LatLng(59.939095, 30.319530));
+    } else if (document.body.clientWidth < 768) {
+      map.setCenter(new google.maps.LatLng(59.938845, 30.323200));
     } else {
-      map.setCenter(new google.maps.LatLng(59.938800, 30.323200));
+      map.setCenter(new google.maps.LatLng(59.939085, 30.323200));
     }
   });
 }
